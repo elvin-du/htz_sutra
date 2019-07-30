@@ -51,7 +51,7 @@
 	string original - 经典原文，存储在数据库，而不是在文件中
 	string audio_id - 音频文件id
 	string lyric_id - 歌词文件id，包含张讲师所有的话
-	uint64 sort - 第几集
+	uint64 lesson - 第几集
 	uint64 played_count - 播放次数
 	uint64 duration - 时长
 	string created_at
@@ -75,7 +75,7 @@
   string sutra_cover - 经典专辑封面文件id
   string sutra_item_id - 经典专辑条目id 
   string sutra_item_title - 经典专辑条目标题
-  int64 last_position - 上次收听到了哪一秒
+  int64 last_position - 上次听到哪里，单位：秒。小于零表示已经听完。
 }
 ```
 # 3. 主逻辑服务
