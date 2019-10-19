@@ -1,0 +1,13 @@
+{
+  "db_address": "localhost:27017",
+  "db_user": "mdu",
+  "db_password": "12345678",
+  "db_name": "sync_mdu",
+  "node_address": "localhost:26657",
+  "lcd_address": "localhost:1317",
+  "http_address": ":9001",
+  "log": {
+    "level": "debug",
+    "output": "file"
+  }
+}
