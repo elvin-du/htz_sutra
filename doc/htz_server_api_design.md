@@ -5,7 +5,7 @@
 # 1. 介绍
 因为用户量不大，为了加快开发速度，并易于以后的维护，所以没有采用微服务架构，而是采用把所有服务集成在一个程序中。
 
-* 数据库： Mysql
+* 数据库： MongoDB
 
 * 整个程序从逻辑上分为以下三个主要服务：
 	+ 主逻辑服务： 负责提供系统的主要逻辑。
@@ -20,13 +20,18 @@
 		- delete：删除；例如：/delete/user（删除用户）
 		- post：添加；例如：/post/user（添加用户）
 		- put：更新；例如：/put/user（更新用户信息）
+	+ 字段命名方式: 单词使用`_`作分隔，而非驼峰方式。
+	+ 
 
 # 2. 公共数据结构
-* **ActionResult** 非只读API的执行结果
+
+
+* **Response** 统一的返回样式。**以下接口返回都只写了成功时的data字段。**
 ```
 {
-	int status - 执行结果。1 - 成功，其余为失败
-	string msg - 执行结果描述
+	int code - 执行结果。200 - 成功，其余为失败
+	string err - 执行错误结果描述
+	string data - json数据结构的执行结果
 }
 ```
 * **SutraInfo** 经典信息
@@ -93,7 +98,7 @@ ListenHistory - 参阅公共数据结构
 ```
 * Outputs
 ```
-ActionResult - 参阅公共数据结构
+Response - 参阅公共数据结构
 ```
 #### 3.1.4.2. 获取收听记录
 * URI: /get/listen/histories
@@ -204,7 +209,7 @@ SutraInfo - 经典专辑的信息，详细信息请参阅公共数据结构
 
 * Outputs
 ```
-ActionResult - 参阅公共数据结构
+Response - 参阅公共数据结构
 ```
 
 # 4. 文件服务
