@@ -1,3 +1,21 @@
+# github.com/aws/aws-sdk-go v1.34.28
+github.com/aws/aws-sdk-go/aws
+github.com/aws/aws-sdk-go/aws/awserr
+github.com/aws/aws-sdk-go/aws/awsutil
+github.com/aws/aws-sdk-go/aws/client/metadata
+github.com/aws/aws-sdk-go/aws/credentials
+github.com/aws/aws-sdk-go/aws/endpoints
+github.com/aws/aws-sdk-go/aws/request
+github.com/aws/aws-sdk-go/aws/signer/v4
+github.com/aws/aws-sdk-go/internal/context
+github.com/aws/aws-sdk-go/internal/ini
+github.com/aws/aws-sdk-go/internal/sdkio
+github.com/aws/aws-sdk-go/internal/sdkmath
+github.com/aws/aws-sdk-go/internal/shareddefaults
+github.com/aws/aws-sdk-go/internal/strings
+github.com/aws/aws-sdk-go/internal/sync/singleflight
+github.com/aws/aws-sdk-go/private/protocol
+github.com/aws/aws-sdk-go/private/protocol/rest
 # github.com/bartekn/go-bip39 v0.0.0-20171116152956-a05967ea095d
 github.com/bartekn/go-bip39
 # github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973
@@ -169,11 +187,19 @@ github.com/hashicorp/hcl/json/scanner
 github.com/hashicorp/hcl/json/token
 # github.com/inconshreveable/mousetrap v1.0.0
 github.com/inconshreveable/mousetrap
+# github.com/jmespath/go-jmespath v0.4.0
+github.com/jmespath/go-jmespath
 # github.com/jmhodges/levigo v1.0.0
 github.com/jmhodges/levigo
 # github.com/json-iterator/go v1.1.7
 github.com/json-iterator/go
-# github.com/konsorten/go-windows-terminal-sequences v1.0.1
+# github.com/klauspost/compress v1.9.5
+github.com/klauspost/compress/fse
+github.com/klauspost/compress/huff0
+github.com/klauspost/compress/snappy
+github.com/klauspost/compress/zstd
+github.com/klauspost/compress/zstd/internal/xxhash
+# github.com/konsorten/go-windows-terminal-sequences v1.0.2
 github.com/konsorten/go-windows-terminal-sequences
 # github.com/kr/logfmt v0.0.0-20140226030751-b84e30acd515
 github.com/kr/logfmt
@@ -191,9 +217,9 @@ github.com/mitchellh/mapstructure
 github.com/modern-go/concurrent
 # github.com/modern-go/reflect2 v1.0.1
 github.com/modern-go/reflect2
-# github.com/pelletier/go-toml v1.2.0
+# github.com/pelletier/go-toml v1.7.0
 github.com/pelletier/go-toml
-# github.com/pkg/errors v0.8.1
+# github.com/pkg/errors v0.9.1
 github.com/pkg/errors
 # github.com/pmezard/go-difflib v1.0.0
 github.com/pmezard/go-difflib/difflib
@@ -219,7 +245,7 @@ github.com/rakyll/statik/fs
 github.com/rcrowley/go-metrics
 # github.com/rs/cors v1.6.0
 github.com/rs/cors
-# github.com/sirupsen/logrus v1.2.0
+# github.com/sirupsen/logrus v1.4.2
 github.com/sirupsen/logrus
 # github.com/spf13/afero v1.2.1
 github.com/spf13/afero
@@ -234,7 +260,7 @@ github.com/spf13/jwalterweatherman
 github.com/spf13/pflag
 # github.com/spf13/viper v1.3.2
 github.com/spf13/viper
-# github.com/stretchr/testify v1.3.0
+# github.com/stretchr/testify v1.6.1
 github.com/stretchr/testify/assert
 github.com/stretchr/testify/require
 # github.com/syndtr/goleveldb v1.0.1-0.20190318030020-c3a204f8e965
@@ -329,21 +355,28 @@ github.com/tendermint/tendermint/version
 github.com/tendermint/tm-db
 # github.com/ugorji/go/codec v1.1.7
 github.com/ugorji/go/codec
-# github.com/xdg/scram v0.0.0-20180814205039-7eeb5667e42c
-github.com/xdg/scram
-# github.com/xdg/stringprep v1.0.0
-github.com/xdg/stringprep
+# github.com/xdg-go/pbkdf2 v1.0.0
+github.com/xdg-go/pbkdf2
+# github.com/xdg-go/scram v1.0.2
+github.com/xdg-go/scram
+# github.com/xdg-go/stringprep v1.0.2
+github.com/xdg-go/stringprep
+# github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d
+github.com/youmark/pkcs8
 # github.com/zondax/hid v0.9.0
 github.com/zondax/hid
-# go.mongodb.org/mongo-driver v1.1.1
+# go.mongodb.org/mongo-driver v1.5.1
 go.mongodb.org/mongo-driver/bson
 go.mongodb.org/mongo-driver/bson/bsoncodec
+go.mongodb.org/mongo-driver/bson/bsonoptions
 go.mongodb.org/mongo-driver/bson/bsonrw
 go.mongodb.org/mongo-driver/bson/bsontype
 go.mongodb.org/mongo-driver/bson/primitive
 go.mongodb.org/mongo-driver/event
 go.mongodb.org/mongo-driver/internal
 go.mongodb.org/mongo-driver/mongo
+go.mongodb.org/mongo-driver/mongo/address
+go.mongodb.org/mongo-driver/mongo/description
 go.mongodb.org/mongo-driver/mongo/options
 go.mongodb.org/mongo-driver/mongo/readconcern
 go.mongodb.org/mongo-driver/mongo/readpref
@@ -353,36 +386,38 @@ go.mongodb.org/mongo-driver/version
 go.mongodb.org/mongo-driver/x/bsonx
 go.mongodb.org/mongo-driver/x/bsonx/bsoncore
 go.mongodb.org/mongo-driver/x/mongo/driver
-go.mongodb.org/mongo-driver/x/mongo/driver/address
 go.mongodb.org/mongo-driver/x/mongo/driver/auth
 go.mongodb.org/mongo-driver/x/mongo/driver/auth/internal/gssapi
 go.mongodb.org/mongo-driver/x/mongo/driver/connstring
-go.mongodb.org/mongo-driver/x/mongo/driver/description
 go.mongodb.org/mongo-driver/x/mongo/driver/dns
+go.mongodb.org/mongo-driver/x/mongo/driver/mongocrypt
+go.mongodb.org/mongo-driver/x/mongo/driver/mongocrypt/options
+go.mongodb.org/mongo-driver/x/mongo/driver/ocsp
 go.mongodb.org/mongo-driver/x/mongo/driver/operation
 go.mongodb.org/mongo-driver/x/mongo/driver/session
 go.mongodb.org/mongo-driver/x/mongo/driver/topology
 go.mongodb.org/mongo-driver/x/mongo/driver/uuid
 go.mongodb.org/mongo-driver/x/mongo/driver/wiremessage
-# golang.org/x/crypto v0.0.0-20190313024323-a1f597ede03a
+# golang.org/x/crypto v0.0.0-20200302210943-78000ba7a073
+golang.org/x/crypto/blake2b
 golang.org/x/crypto/blowfish
+golang.org/x/crypto/chacha20
 golang.org/x/crypto/chacha20poly1305
 golang.org/x/crypto/curve25519
 golang.org/x/crypto/ed25519
 golang.org/x/crypto/ed25519/internal/edwards25519
 golang.org/x/crypto/hkdf
-golang.org/x/crypto/internal/chacha20
 golang.org/x/crypto/internal/subtle
 golang.org/x/crypto/nacl/box
 golang.org/x/crypto/nacl/secretbox
+golang.org/x/crypto/ocsp
 golang.org/x/crypto/openpgp/armor
 golang.org/x/crypto/openpgp/errors
 golang.org/x/crypto/pbkdf2
 golang.org/x/crypto/poly1305
 golang.org/x/crypto/ripemd160
 golang.org/x/crypto/salsa20/salsa
-golang.org/x/crypto/ssh/terminal
-# golang.org/x/net v0.0.0-20190628185345-da137c7871d7
+# golang.org/x/net v0.0.0-20200202094626-16171245cfb2
 golang.org/x/net/context
 golang.org/x/net/http/httpguts
 golang.org/x/net/http2
@@ -391,13 +426,13 @@ golang.org/x/net/idna
 golang.org/x/net/internal/timeseries
 golang.org/x/net/netutil
 golang.org/x/net/trace
-# golang.org/x/sync v0.0.0-20190423024810-112230192c58
+# golang.org/x/sync v0.0.0-20190911185100-cd5d95a43a6e
+golang.org/x/sync/errgroup
 golang.org/x/sync/semaphore
 # golang.org/x/sys v0.0.0-20190916202348-b4ddaad3f8a3
 golang.org/x/sys/cpu
 golang.org/x/sys/unix
-golang.org/x/sys/windows
-# golang.org/x/text v0.3.0
+# golang.org/x/text v0.3.5
 golang.org/x/text/secure/bidirule
 golang.org/x/text/transform
 golang.org/x/text/unicode/bidi
@@ -440,5 +475,7 @@ google.golang.org/grpc/status
 google.golang.org/grpc/tap
 # gopkg.in/go-playground/validator.v8 v8.18.2
 gopkg.in/go-playground/validator.v8
-# gopkg.in/yaml.v2 v2.2.2
+# gopkg.in/yaml.v2 v2.2.8
 gopkg.in/yaml.v2
+# gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
+gopkg.in/yaml.v3
